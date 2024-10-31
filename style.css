@@ -1,0 +1,423 @@
+.header {
+  height: 80%;
+}
+
+.logo img {
+  height: 10px;
+}
+body {
+  background-color: black;
+  font-family: Sans-Serif,Arial,Tahoma;
+  color: white;
+}
+body ::-webkit-scrollbar{
+  display: none;
+}
+a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+frame {
+  overflow: hidden;
+  border: #000000;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  width: 10%;
+}
+
+input[type="text"] {
+  flex: 1;
+  margin-right: 20px;
+  padding: 8px;
+  border: none;
+  outline: none;
+  height: 35px;
+  width: 150px;
+  font-size: 15px;
+}
+
+input[type="text"]:hover {
+  border: 5px solid red;
+  height: 25px;
+  width: 140px;
+}
+
+button[type="submit"] {
+  background-color: #fd0000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 50px;
+  width: 100px;
+  font-size: 15px;
+}
+
+.halamanutama {
+  position:absolute; 
+  width: 98%; 
+  height: 98%;
+}
+.halamanutama ::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar {
+  position:absolute; 
+  width: 90%; 
+  height: 98%;
+  padding-left: 3%;
+  gap: 5px;
+
+}
+
+.sidebar ::-webkit-scrollbar{
+  display: none;
+}
+
+.sidebar form {
+  position: sticky; 
+  background-color: black;
+  top: 0; 
+  padding: 10px; 
+  z-index: 10; 
+}
+
+.sidebar h3 {
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.vertical-scroll {
+  position: fixed;
+  height: 80%;
+  display: flex;
+  overflow-y: auto;
+}
+
+.vetical {
+  position: absolute;
+  display: flex;
+  flex-shrink: 0;
+}
+.vertical img {
+  width: 100%;
+  height: 100%;
+}
+
+.listanime {
+  margin-top: 20px; 
+  padding: 10px; 
+  border-radius: 5px; 
+  font-size: 10px;
+  gap: 20px;
+}
+
+.sidebar a {
+  font-size: 10;
+}
+
+.listanime a:hover {
+  background-color: #fd0000;
+}
+
+.navigator {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.navigator h2 {
+  font-size: 20px;
+}
+.home {
+  padding: 5px;
+}
+.home:hover {
+  background-color: #fd0000;
+}
+.animeterbaru {
+  padding: 5px;
+}
+.animeterbaru:hover {
+  background-color: #fd0000;
+}
+.animecomplete {
+  padding: 5px;
+}
+.animecomplete:hover {
+  background-color: #fd0000;
+}
+.tentang {
+  padding: 5px;
+}
+.tentang:hover {
+  background-color: #fd0000;
+}
+
+.container {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.horizontal-scroll {
+  width: 90%;
+  height: 330px;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.rek {
+  display: flex;
+  gap: 20px;
+  padding:20px;
+  min-width: 100%;
+  flex-shrink: 0;
+}
+.subjudul {
+  width: 90%;
+  padding-left: 10px;
+  padding-top: 1px;
+  font-size: 15px;
+  background-color: #fd0000;
+}
+.subjudul h2 {
+  padding-left: 30px;
+}
+
+.card {
+  width: 195px;
+  height: 270px;
+  background-color: white;
+  border: 1px solid black;
+  position: relative;
+}
+
+.card:hover {
+  width: 187px;
+  height: 262px;
+  border: 5px solid red;
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 15px;
+}
+
+.card:hover .content {
+  display: flex;
+}
+
+hr {
+  width: 100%;
+  margin: 20px 0;
+  border: 1px solid white;
+}
+
+.animestream {
+  padding-left: 5%;
+  width: 80%
+}
+.judul {
+  font-size: 15px;
+  padding-right: 30%;
+}
+.juduldancontrol {
+  display: flex;
+  align-items:end;
+}
+.controls {
+  display: flex;
+  width: 30%;
+  padding-left: 30%;
+}
+.previous {
+  padding-left: 20%;
+}
+.previous h3{
+  font-size: 30px;
+  background-color: #fd0000;
+  padding: 10px 15px;
+}
+.next {
+  padding-left: 5%;
+}
+.next h3{
+  font-size: 30px;
+  background-color: #fd0000;
+  padding: 10px 15px;
+}
+
+#tentang-page {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 10px;
+}
+
+#tentang-page h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+#tentang-page h2 {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+#tentang-page p {
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+#tentang-page ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#tentang-page ul li {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+#tentang-page a {
+    color: #fd0000;
+    text-decoration: none;
+}
+
+#tentang-page a:hover {
+    text-decoration: underline;
+}
+
+.vidio {
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+}
+
+video {
+    width: 80%; 
+    max-width: 800px; 
+    height: auto; 
+    border: 1px solid #ccc;
+}
+
+footer {
+    background-color: #333;
+    color: white; 
+    padding: 3px;
+    text-align: center; 
+    font-size: 12px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0; 
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.footer-links a {
+    color: white; 
+    text-decoration: none; 
+    font-size: 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline; 
+}
+
+.social-media {
+    margin-top: 6px; 
+}
+
+.social-media a {
+    color: white;
+    margin: 0 10px;
+    font-size: 10px;
+}
+
+.anime-detail-container {
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+}
+
+.anime-image {
+    width: 200px;
+    height: 320px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 50px;
+}
+
+.anime-info {
+    flex: 2;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.info-table {
+    width: 60%;
+}
+
+.info-table td {
+    padding: 8px;
+}
+
+.anime-description {
+    margin: 10px;
+    font-size: 18px;
+    width: 80%;
+    padding-left: 100px;
+}
+
+.anime-episodes {
+    margin: 20px;
+    font-size: 30px;
+    padding-left: 100px;
+    width: 75%;
+}
+
+.episode-list {
+    margin: 10px 0;
+}
+
+.episode-item {
+    padding: 5px;
+}
+
+.episode-item.odd {
+    background-color: #f10000;
+}
+
+.episode-item.even {
+    background-color: #000000;
+}
